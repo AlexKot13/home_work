@@ -1,0 +1,27 @@
+ 
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.9G      2.3G      2.6G  47% /
+devtmpfs                 91.3M         0     91.3M   0% /dev
+
+#!/bin/bash
+#файл myfirstbashscript.sh создан 21.06.25
+USER="Sasha"
+echo "Скрипт запущен из директории: $(pwd)"
+   0 nano /tmp/file.txt
+   1 clear
+   2 df -h | head -3 >> /tmp/file.txt
+   3 ls -l /tmp/file.txt
+   4 chmod g+wx /tmp/file.txt
+   5 chmod g-r /tmp/file.txt
+   6 ls -l /tmp/file.txt
+   7 chmod o-r /tmp/file.txt
+   8 ls -l /tmp/file.txt
+   9 nano myfirstbashscript.sh
+  10 clear
+  11 ./myfirstbashscript.sh
+  12 ls -l myfirstbashscript.sh
+  13 chmod +x myfirstbashscript.sh
+  14 ls -l myfirstbashscript.sh
+  15 ./myfirstbashscript.sh
+  16 cat myfirstbashscript.sh >> /tmp/file.txt
+  17 history >> /tmp/file.txt
