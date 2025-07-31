@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd /opt/250425-wdm/sasha-kot/hw20/dir_random
+
+   for file in *
+   do
+     if [ $((file % 2)) -eq 0 ]; then 
+       mv "$file" /opt/250425-wdm/sasha-kot/hw20/dir_even/
+     fi
+   done

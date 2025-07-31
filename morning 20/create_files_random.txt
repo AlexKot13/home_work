@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /opt/250425-wdm/sasha-kot/hw20/dir_random
+
+for i in {1..100}
+   do
+     filename=$RANDOM
+     touch "$filename"
+done
